@@ -1,13 +1,12 @@
-import React from 'react'
-import './styles.scss'
-import { StaticQuery, graphql } from 'gatsby'
-import { Row, Col } from 'react-bootstrap'
-import Glitch from 'components/glitch'
-import Typewriter from 'typewriter-effect'
-import ThemeContext from '../../context'
+import React from "react";
+import "./styles.scss";
+import { StaticQuery, graphql } from "gatsby";
+import { Row, Col } from "react-bootstrap";
+import Glitch from "components/glitch";
+import Typewriter from "typewriter-effect";
+import ThemeContext from "../../context";
 class Hero extends React.Component {
-
-  static contextType = ThemeContext
+  static contextType = ThemeContext;
 
   render() {
     return (
@@ -22,20 +21,20 @@ class Hero extends React.Component {
               <div className="line-text">
                 <h4>Hello, I'm</h4>
               </div>
-              <Glitch text="John Neo" />
+              <Glitch text="Gustavo Abdelnour" />
               <Typewriter
                 options={{
                   strings: [
-                    'UI/UX Designer',
-                    'PHP Developer',
-                    'Mobile App Expert',
+                    "Data Scientist",
+                    "Full-Stack Developer",
+                    "Avid Photographer",
                   ],
                   autoStart: true,
                   loop: true,
                 }}
               />
               <button className="hover-button">
-                  <span>Download CV</span>
+                <span>DOWNLOAD CV</span>
               </button>
             </div>
             {this.icons()}
@@ -48,7 +47,7 @@ class Hero extends React.Component {
           </Col>
         </Row>
       </section>
-    )
+    );
   }
 
   icons() {
@@ -57,23 +56,25 @@ class Hero extends React.Component {
         <img
           src={value.node.childImageSharp.fluid.src}
           className={`animated fadeIn move-${
-            Math.floor(Math.random() * 10) % 2 === 0 ? 'up' : 'down'
+            Math.floor(Math.random() * 10) % 2 === 0 ? "up" : "down"
           } float-image`}
           style={{
             left: `${index * 10}%`,
-            bottom: `${Math.random() *
-              (+(index % 2 === 0 ? 80 : 20) - +(index % 2 === 0 ? 70 : 10)) +
-              +(index % 2 === 0 ? 70 : 10)}%`,
+            bottom: `${
+              Math.random() *
+                (+(index % 2 === 0 ? 80 : 20) - +(index % 2 === 0 ? 70 : 10)) +
+              +(index % 2 === 0 ? 70 : 10)
+            }%`,
           }}
           alt="shape"
           key={index}
         />
-      )
-    })
+      );
+    });
   }
 }
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={graphql`
       query {
@@ -104,4 +105,4 @@ export default props => (
     `}
     render={({ icons, Img }) => <Hero icons={icons} mainImg={Img} {...props} />}
   />
-)
+);
