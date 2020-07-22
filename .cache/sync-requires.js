@@ -5,8 +5,8 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/gustavoabdelnour/Desktop/Abdel Goose Branding/Retro/retro/.cache/dev-404-page.js"))),
-  "component---src-pages-404-js": hot(preferDefault(require("/Users/gustavoabdelnour/Desktop/Abdel Goose Branding/Retro/retro/src/pages/404.js"))),
-  "component---src-pages-index-js": hot(preferDefault(require("/Users/gustavoabdelnour/Desktop/Abdel Goose Branding/Retro/retro/src/pages/index.js")))
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/gustavoabdelnour/Desktop/goose_is_loose/.cache/dev-404-page.js"))),
+  "component---src-pages-404-js": hot(preferDefault(require("/Users/gustavoabdelnour/Desktop/goose_is_loose/src/pages/404.js"))),
+  "component---src-pages-index-js": hot(preferDefault(require("/Users/gustavoabdelnour/Desktop/goose_is_loose/src/pages/index.js")))
 }
 
