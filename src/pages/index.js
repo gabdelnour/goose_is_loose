@@ -24,7 +24,6 @@ class HomePage extends React.Component {
           <About id="about" />
           <Services id="services" />
           <Portfolio id="portfolio" />
-          <Testimonials id="testimonials" />
           <Contact id="contact" />
         </Layout>
         <Spinner duration={1000} />
