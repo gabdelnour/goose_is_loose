@@ -94,10 +94,24 @@ export default (props) => (
             }
           }
         }
-        Img: file(relativePath: { eq: "person.jpg" }) {
+        Img: file(relativePath: { eq: "gooseAvatar.png" }) {
           childImageSharp {
-            fluid(maxWidth: 2000) {
+            fluid(
+              duotone: { highlight: "#FFFFFF", shadow: "#251170" }
+              maxWidth: 2000
+            ) {
+              base64
+              tracedSVG
+              aspectRatio
               src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+              presentationWidth
+              presentationHeight
             }
           }
         }
