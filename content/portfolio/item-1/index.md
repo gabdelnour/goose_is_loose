@@ -1,6 +1,8 @@
 ---
 id: 1
-image: './image.jpg'
-title: "Front-end Development"
-category: "React.js"
+image: "./wynstore.png"
+title: "Wynstore (e-commerce)"
+category: "Ruby on Rails"
+url: "https://wynstore.herokuapp.com/"
+repositoryUrl: "https://github.com/wyncode/c35-wynstore"
 ---
