@@ -207,7 +207,7 @@ export default (props) => (
       query {
         items: allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/(portfolio)/" } }
-          sort: { fields: id, order: DESC }
+          sort: { fields: frontmatter___id, order: ASC }
           limit: 6
         ) {
           edges {

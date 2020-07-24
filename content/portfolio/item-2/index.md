@@ -1,6 +1,8 @@
 ---
 id: 2
-image: './image.jpg'
-title: "Front-end Project"
-category: "React.js"
+image: "./wyncodeCo.png"
+title: "Wyncode Redesign"
+category: "Ruby & Liquid"
+url: "https://wyncode.co/"
+repositoryUrl: "https://github.com/wyncode/c35-wynstore"
 ---
