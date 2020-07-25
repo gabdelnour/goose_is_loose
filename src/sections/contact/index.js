@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./styles.scss";
 import { Row, Col } from "react-bootstrap";
 import AnimationContainer from "components/animation-container";
 import BaffleText from "components/baffle-text";
+import Typewriter from "typewriter-effect";
 import ThemeContext from "../../context";
 
 class Contact extends React.Component {
@@ -15,6 +17,7 @@ class Contact extends React.Component {
       message: "",
       error: false,
       show: false,
+      status: "",
     };
     this.show = this.show.bind(this);
   }
@@ -43,6 +46,7 @@ class Contact extends React.Component {
       this.setState({ error: false });
     }
   }
+
   render() {
     return (
       <section
@@ -77,9 +81,21 @@ class Contact extends React.Component {
     if (this.state.show || this.context.height === "auto") {
       return (
         <AnimationContainer delay={0} animation="fadeInUp fast">
-          <div className="form-container">
+          <form
+            className="form-container"
+            action={process.env.GATSBY_FORMSPREE_VARIABLE}
+            method="POST"
+          >
             <div className="line-text">
-              <h4>Get In Touch</h4>
+              <h4>
+                <Typewriter
+                  options={{
+                    strings: ["Get In Touch"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </h4>
               <AnimationContainer delay={50} animation="fadeInUp fast">
                 <div className="form-group">
                   <input
@@ -88,6 +104,7 @@ class Contact extends React.Component {
                       this.check(this.state.name) ? "" : "error"
                     }`}
                     placeholder="Name"
+                    name="name"
                     onChange={(e) => this.setState({ name: e.target.value })}
                   />
                 </div>
@@ -100,6 +117,7 @@ class Contact extends React.Component {
                       this.check(this.state.email) ? "" : "error"
                     }`}
                     placeholder="Email"
+                    name="_replyto"
                     onChange={(e) => this.setState({ email: e.target.value })}
                   />
                 </div>
@@ -108,6 +126,7 @@ class Contact extends React.Component {
                 <div className="form-group">
                   <input
                     type="text"
+                    name="number"
                     className="phone"
                     placeholder="Phone"
                     onChange={(e) => this.setState({ phone: e.target.value })}
@@ -131,14 +150,15 @@ class Contact extends React.Component {
                     className={`hover-button ${
                       this.state.error ? "error" : ""
                     }`}
-                    onClick={() => this.submit()}
+                    onClick={(e) => this.submit()}
+                    value="Send"
                   >
                     <span>Send Message</span>
                   </button>
                 </div>
               </AnimationContainer>
             </div>
-          </div>
+          </form>
         </AnimationContainer>
       );
     }
