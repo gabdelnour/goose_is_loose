@@ -33,9 +33,11 @@ class Hero extends React.Component {
                   loop: true,
                 }}
               />
-              <button className="hover-button">
-                <span>DOWNLOAD CV</span>
-              </button>
+              <a href="https://bit.ly/3jC0mec" target="_blank">
+                <button className="hover-button">
+                  <span>DOWNLOAD CV</span>
+                </button>
+              </a>
             </div>
             {this.icons()}
           </Col>
@@ -97,21 +99,10 @@ export default (props) => (
         Img: file(relativePath: { eq: "gooseAvatar.png" }) {
           childImageSharp {
             fluid(
-              duotone: { highlight: "#FFFFFF", shadow: "#251170" }
               maxWidth: 2000
+              duotone: { highlight: "#FFFFFF", shadow: "#251170" }
             ) {
-              base64
-              tracedSVG
-              aspectRatio
               src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-              originalImg
-              originalName
-              presentationWidth
-              presentationHeight
             }
           }
         }
