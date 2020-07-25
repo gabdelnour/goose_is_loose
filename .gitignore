@@ -1,3 +1,4 @@
 .cache
 public
 .vercel
+.env.development
