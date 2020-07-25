@@ -37,21 +37,20 @@ class Hero extends React.Component {
                   />
                 </h4>
               </div>
-              <h3>Here is a little about me as a person</h3>
+              <h3>Here is a little about me</h3>
               <div className="separator" />
               <p>
                 I was born and raised in Caracas, Venezuela. At 14 I moved to
                 Miami Florida. Upon graduating High School I attended Santa
                 Clara University where I was a D1 rower. By Junior year, I
-                transfered to George Washington where I graduated with a double
-                major on Economics and Political Science.
+                transfered to George Washington University where I graduated
+                with a double major on Economics and Political Science.
                 <br></br>
                 <br></br>
                 My passion for software development arrised from my love for
-                data analysis. Being limited by platforms like excel and limited
-                computer power of my laptop. I realized I needed to learn
-                software development, cloud computing, and its most important
-                languages to increase my ability to handle data and create
+                data analysis. Being limited by BI tools and their default
+                features. I realized I needed to learn craft of software
+                development, to enhance my ability to handle data and create
                 beautiful displays.
               </p>
               <div className="social social_icons">

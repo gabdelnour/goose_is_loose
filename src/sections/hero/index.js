@@ -26,8 +26,8 @@ class Hero extends React.Component {
                 options={{
                   strings: [
                     "Data Scientist",
-                    "Full-Stack Developer",
-                    "Avid Photographer",
+                    "Software Developer",
+                    "Photographer",
                   ],
                   autoStart: true,
                   loop: true,
