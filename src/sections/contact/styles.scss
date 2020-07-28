@@ -1,5 +1,5 @@
 .contact {
-  background-color: #000;
+  background-color: #0f0f0f;
   @media (max-width: 991px) {
     margin-top: 40px;
   }
@@ -17,7 +17,7 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      background-color: #7c30ea;
+      background-color: #d51a35;
       .baffle_text {
         transform: rotate(-90deg);
         text-align: center;
@@ -49,7 +49,7 @@
       justify-content: center;
       flex-direction: column;
       padding: 0 5%;
-      background-color: #000;
+      background-color: #0f0f0f;
       @media (max-width: 767px) {
         padding: 30px 50px 50px 50px;
       }
@@ -60,13 +60,13 @@
           overflow: visible;
           height: 50px;
           width: 100%;
-          background-color: #000;
+          background-color: #0f0f0f;
           border: none;
           border-bottom: 1px solid #555;
           transition: 0.2s;
           color: #fff;
           &:focus {
-            border-bottom: 1px solid #eb83f8;
+            border-bottom: 1px solid #e6d236;
             outline: none;
           }
           &.error {

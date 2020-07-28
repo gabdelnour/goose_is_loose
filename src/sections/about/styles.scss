@@ -1,5 +1,5 @@
 .about {
-  background-color: #000;
+  background-color: #0f0f0f;
   position: relative;
   .row {
     display: flex;
@@ -48,7 +48,7 @@
           transition: 0.2s;
           cursor: pointer;
           &:hover {
-            color: #eb83f8;
+            color: #e6d236;
           }
         }
       }

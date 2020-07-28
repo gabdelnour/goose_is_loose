@@ -34,7 +34,7 @@ img {
 }
 
 .line-text h4 {
-  color: #fff;
+  color: #0f0f0f;
   font-family: Poppins;
   font-size: 22px;
   position: relative;
@@ -45,7 +45,7 @@ img {
     height: 3px;
     width: 90px;
     display: block;
-    background-color: #eb83f8;
+    background-color: #e6d236;
     position: absolute;
     top: 0;
     left: -108px;
@@ -70,11 +70,11 @@ img {
   }
   &.white {
     button {
-      border-color: #fff;
-      background-color: #fff;
+      border-color: #0f0f0f;
+      background-color: #0f0f0f;
       &:hover {
         background-color: #000;
-        color: #fff;
+        color: #0f0f0f;
       }
     }
   }
@@ -83,7 +83,7 @@ img {
   height: 3px;
   width: 90px;
   display: block;
-  background-color: #eb83f8;
+  background-color: #e6d236;
 }
 .row {
   overflow-x: hidden;
@@ -94,13 +94,13 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #251170;
-  color: #fff;
+  color: #0f0f0f;
   h1 {
     font-size: 50px;
     font-weight: 900;
   }
   a {
-    color: #eb83f8;
+    color: #e6d236;
     &:hover {
       text-decoration: none;
     }
@@ -118,7 +118,7 @@ img {
   justify-content: center;
   width: 180px;
   height: 50px;
-  background: #000;
+  background: #0f0f0f;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -147,7 +147,7 @@ img {
     &:after {
       bottom: -2px;
       right: -2px;
-      background: #eb83f8;
+      background: #e6d236;
     }
   }
   &:before,
@@ -162,7 +162,7 @@ img {
   &:before {
     top: -2px;
     left: -2px;
-    background: #eb83f8;
+    background: #e6d236;
   }
   &:after {
     top: -2px;

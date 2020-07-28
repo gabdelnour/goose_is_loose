@@ -1,5 +1,5 @@
 .services {
-  background-color: #000;
+  background-color: #0f0f0f;
   .row.top {
     display: flex;
     min-height: 80%;
@@ -51,7 +51,7 @@
             }
             .icon svg {
               font-size: 50px;
-              color: #4ae5e5;
+              color: #e6d236;
               &.solid {
                 font-size: 40px !important;
               }
@@ -108,7 +108,7 @@
           .symbol {
             position: absolute;
             font-size: 17px;
-            color: #eb83f8;
+            color: #e6d236;
           }
         }
         .text {

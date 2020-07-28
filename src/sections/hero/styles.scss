@@ -1,5 +1,5 @@
 .hero {
-  background-color: #7c30ea;
+  background-color: #0f0f0f;
   height: 500px;
   padding: 50px;
   display: flex;
@@ -44,7 +44,7 @@
         font-family: Poppins;
         font-weight: 700;
         &.Typewriter__cursor {
-          color: #eb83f8;
+          color: #e6d236;
         }
       }
       @media (max-width: 991px) {
