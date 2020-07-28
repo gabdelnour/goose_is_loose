@@ -59,24 +59,19 @@ class Hero extends React.Component {
                   onClick={() => window.open("https://github.com/gabdelnour")}
                 />
                 <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="social_icon"
-                  onClick={() =>
-                    window.open("https://www.instagram.com/abdel_goose/")
-                  }
-                />
-                {/* <FontAwesomeIcon
-                  icon={faYoutube}
-                  className="social_icon"
-                  onClick={() => window.open("https://www.youtube.com")}
-                /> */}
-                <FontAwesomeIcon
                   icon={faLinkedin}
                   className="social_icon"
                   onClick={() =>
                     window.open(
                       "https://www.linkedin.com/in/gustavo-abdelnour/"
                     )
+                  }
+                />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="social_icon"
+                  onClick={() =>
+                    window.open("https://www.instagram.com/abdel_goose/")
                   }
                 />
               </div>
@@ -103,7 +98,7 @@ class Hero extends React.Component {
             line_linked: {
               enable: true,
               opacity: 0.5,
-              color: "#76D395",
+              color: "#4AE5E5",
             },
             size: {
               value: 0.5,
