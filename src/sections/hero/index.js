@@ -100,7 +100,7 @@ export default (props) => (
           childImageSharp {
             fluid(
               maxWidth: 2000
-              duotone: { highlight: "#FFFFFF", shadow: "#251170" }
+              duotone: { highlight: "#4AE7E5", shadow: "#7C30EA" }
             ) {
               src
             }
