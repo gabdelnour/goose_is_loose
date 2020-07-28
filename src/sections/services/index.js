@@ -1,35 +1,28 @@
-import React from 'react'
-import { Row, Col, Container } from 'react-bootstrap'
-import BaffleText from 'components/baffle-text'
-import AnimationContainer from 'components/animation-container'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faAngular, faAws } from '@fortawesome/free-brands-svg-icons'
-import {
-  faPencilRuler,
-  faServer,
-  faRobot,
-  faSmileBeam,
-  faPizzaSlice,
-  faQuoteRight,
-  faCode,
-} from '@fortawesome/free-solid-svg-icons'
-import Counter from 'components/counter'
-import ThemeContext from '../../context'
-import './styles.scss'
+import React from "react";
+import { Row, Col, Container } from "react-bootstrap";
+import BaffleText from "components/baffle-text";
+import AnimationContainer from "components/animation-container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, faPython, faAws } from "@fortawesome/free-brands-svg-icons";
+import { faRobot } from "@fortawesome/free-solid-svg-icons";
+import Typewriter from "typewriter-effect";
+import Particles from "react-particles-js";
+import ThemeContext from "../../context";
+import "./styles.scss";
 
 class Services extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       show: false,
-    }
-    this.show = this.show.bind(this)
+    };
+    this.show = this.show.bind(this);
   }
 
-  static contextType = ThemeContext
+  static contextType = ThemeContext;
 
   show() {
-    this.setState({ show: true })
+    this.setState({ show: true });
   }
 
   render() {
@@ -39,13 +32,14 @@ class Services extends React.Component {
         className="services"
         style={{ height: this.context.height }}
       >
+        {this.particles()}
         <Row
           className="top"
           style={{
             maxHeight:
-              this.context.height !== 'auto'
+              this.context.height !== "auto"
                 ? this.context.height * 0.8
-                : 'inherit',
+                : "inherit",
           }}
         >
           <div className="content">
@@ -66,9 +60,9 @@ class Services extends React.Component {
                 className="services_container"
                 style={{
                   minHeight:
-                    this.context.height !== 'auto'
+                    this.context.height !== "auto"
                       ? this.context.height * 0.6
-                      : 'inherit',
+                      : "inherit",
                 }}
               >
                 <Container>{this.services()}</Container>
@@ -76,162 +70,144 @@ class Services extends React.Component {
             </Col>
           </div>
         </Row>
-        <Row className="bottom">{this.counters()}</Row>
       </section>
-    )
+    );
   }
 
   services() {
-    if (this.state.show || this.context.height === 'auto') {
+    if (this.state.show || this.context.height === "auto") {
       return (
         <Row>
-          <Col md={4} className="service">
+          <Col md={4} className="service  border-side">
             <AnimationContainer delay={200} animation="fadeInLeft fast">
               <div className="icon">
                 <FontAwesomeIcon icon={faReact} />
               </div>
-              <h4>Front-end React</h4>
+              <h4>
+                {" "}
+                <Typewriter
+                  options={{
+                    strings: ["Front-End React Developer"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                What I love most about React is the ability to create cool apps
+                with a very quick workflow. I am currently working on an app to
+                visualize pathfinding and sorting algorithms. Can't wait for you
+                to check it out! I also have an app I developed for my coding
+                bootcamp at Wyncode to display data from a Financial API.
               </p>
             </AnimationContainer>
           </Col>
+          <Col></Col>
           <Col md={4} className="service border-side">
             <AnimationContainer delay={400} animation="fadeInDown fast">
               <div className="icon">
-                <FontAwesomeIcon icon={faAngular} />
+                <FontAwesomeIcon icon={faPython} />
               </div>
-              <h4>Angular Web App</h4>
+              <h4>
+                {" "}
+                <Typewriter
+                  options={{
+                    strings: ["Data Science with Python"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                Data Science with Python is definitely one of my favorie skills
+                to have. I love learning about Python libraries, I'm currently
+                developing Financial trading algorithms with Quantopian. I use
+                libraries like matplotlib to visualize my analysis and explain
+                my investment philosophies.
               </p>
             </AnimationContainer>
           </Col>
-          <Col md={4} className="service">
+          <Col md={4} className="service  border-side">
             <AnimationContainer delay={600} animation="fadeInRight fast">
               <div className="icon">
                 <FontAwesomeIcon icon={faAws} />
               </div>
-              <h4>AWS Management</h4>
+              <h4>
+                {" "}
+                <Typewriter
+                  options={{
+                    strings: ["AWS Management"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                During my time at Limbik I dealt with many AWS tools such as EC2
+                instances, S3 Buckets, Redshift queries, Athena, AI APIs and
+                their data, YOU NAME IT!!! I'm currently taking a course of
+                Systemst Informations to understand more about Cloud Management,
+                ETL Protocols, and DevOps.
               </p>
             </AnimationContainer>
           </Col>
-          <Col md={4} className="service">
-            <AnimationContainer delay={800} animation="fadeInLeft fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faPencilRuler} className="solid" />
-              </div>
-              <h4>UI/UX Design</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
-            </AnimationContainer>
-          </Col>
-          <Col md={4} className="service border-side">
-            <AnimationContainer delay={1000} animation="fadeInUp fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faServer} className="solid" />
-              </div>
-              <h4>Linux Server Management</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
-            </AnimationContainer>
-          </Col>
-          <Col md={4} className="service">
+          <Col></Col>
+          <Col md={4} className="service  border-side">
             <AnimationContainer delay={1200} animation="fadeInRight fast">
               <div className="icon">
                 <FontAwesomeIcon icon={faRobot} className="solid" />
               </div>
-              <h4>Artifical Intelligence</h4>
+              <h4>
+                {" "}
+                <Typewriter
+                  options={{
+                    strings: ["Artificial Intelligence"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
+                If you're reading this paragraph then thank you for your
+                attention!!! ALthough I have used AWS and IBM AI APIs I'm by no
+                means an expert, but I do try everyday to learn more about how
+                computers are able to learn. I'm currently taking a course on
+                Mathematical Thinking in Computer Science to build a foundation
+                of mathematics and then become a true AI EXPERT!
               </p>
             </AnimationContainer>
           </Col>
         </Row>
-      )
+      );
     }
   }
-
-  counters() {
-    if (this.state.show || this.context.height === 'auto') {
-      return (
-        <Container>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faSmileBeam}
-                value={100}
-                text="Happy Clients"
-                symbol="+"
-                duration={3}
-              />
-            </AnimationContainer>
-          </Col>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faPizzaSlice}
-                value={1000}
-                text="Pizzas Ordered"
-                symbol="+"
-                duration={3}
-              />
-            </AnimationContainer>
-          </Col>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faQuoteRight}
-                value={500}
-                text="Reviews"
-                symbol="+"
-                duration={3}
-              />
-            </AnimationContainer>
-          </Col>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faCode}
-                value={50000}
-                text="Lines of Code"
-                symbol="+"
-                duration={3}
-              />
-            </AnimationContainer>
-          </Col>
-        </Container>
-      )
-    }
+  particles() {
+    return (
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: {
+              value: 50,
+              density: {
+                enable: false,
+                value_area: 4000,
+              },
+            },
+            line_linked: {
+              enable: true,
+              opacity: 0.5,
+              color: "#4AE5E5",
+            },
+            size: {
+              value: 0.5,
+            },
+          },
+          retina_detect: true,
+        }}
+      />
+    );
   }
 }
 
-export default Services
+export default Services;
