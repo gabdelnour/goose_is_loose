@@ -140,6 +140,7 @@ class Contact extends React.Component {
                       this.check(this.state.message) ? "" : "error"
                     }`}
                     placeholder="Message"
+                    name="message"
                     onChange={(e) => this.setState({ message: e.target.value })}
                   ></textarea>
                 </div>
