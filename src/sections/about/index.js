@@ -6,8 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faTwitter,
-  faYoutube,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import ThemeContext from "../../context";
 import "./styles.scss";
@@ -59,12 +58,14 @@ class Hero extends React.Component {
                   className="social_icon"
                   onClick={() => window.open("https://github.com/gabdelnour")}
                 />
-                {/* <FontAwesomeIcon
-                  icon={faTwitter}
-                  className="social_icon"
-                  onClick={() => window.open("https://www.twitter.com")}
-                />
                 <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="social_icon"
+                  onClick={() =>
+                    window.open("https://www.instagram.com/abdel_goose/")
+                  }
+                />
+                {/* <FontAwesomeIcon
                   icon={faYoutube}
                   className="social_icon"
                   onClick={() => window.open("https://www.youtube.com")}
@@ -96,7 +97,7 @@ class Hero extends React.Component {
               value: 50,
               density: {
                 enable: false,
-                value_area: 5000,
+                value_area: 4000,
               },
             },
             line_linked: {
