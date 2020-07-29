@@ -49,9 +49,9 @@ class Hero extends React.Component {
                 <br></br>
                 My passion for software development arrised from my love for
                 data analysis. Being limited by BI tools and their default
-                features. I realized I needed to learn craft of software
+                features. I realized I needed to master the craft of software
                 development, to enhance my ability to handle data and create
-                beautiful displays.
+                beautiful displays of data.
               </p>
               <div className="social social_icons">
                 <FontAwesomeIcon

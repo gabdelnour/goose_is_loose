@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gustavo Abdelnour Professional Portfolio",
+    title: "Gustavo Abdelnour | Professional Portfolio",
     description:
-      "Gustavo is the CEO of BiscayneDevs. He is a software developer and a Data Scientist.",
+      "Welcome, this is Gustavo Abdelnour's Professional Portfolio. Gustavo is a Full-Stack Software Developer and Data Scientist. Gustavo is also an entrepreneur and the CEO of BiscayneDevs.",
   },
   pathPrefix: "/",
   plugins: [
