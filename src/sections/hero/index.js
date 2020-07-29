@@ -1,4 +1,5 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import "./styles.scss";
 import { StaticQuery, graphql } from "gatsby";
 import { Row, Col } from "react-bootstrap";
@@ -35,11 +36,11 @@ class Hero extends React.Component {
                   loop: true,
                 }}
               />
-              <a href="https://bit.ly/3jC0mec" target="_blank">
+              <OutboundLink href="https://bit.ly/3jC0mec" target="_blank">
                 <button className="hover-button">
                   <span>DOWNLOAD CV</span>
                 </button>
-              </a>
+              </OutboundLink>
             </div>
             {this.icons()}
           </Col>
