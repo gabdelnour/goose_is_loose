@@ -1,4 +1,5 @@
 import React from "react";
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 import Particles from "react-particles-js";
 import Typewriter from "typewriter-effect";
 import { Row, Col } from "react-bootstrap";
@@ -56,23 +57,40 @@ class Hero extends React.Component {
                 <FontAwesomeIcon
                   icon={faGithub}
                   className="social_icon"
-                  onClick={() => window.open("https://github.com/gabdelnour")}
+                  onClick={() => {
+                    window.open("https://github.com/gabdelnour");
+                    trackCustomEvent({
+                      category: "Github Profile",
+                      action: "Click",
+                      label: "Github Profile",
+                    });
+                  }}
                 />
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="social_icon"
-                  onClick={() =>
+                  onClick={() => {
                     window.open(
                       "https://www.linkedin.com/in/gustavo-abdelnour/"
-                    )
-                  }
+                    );
+                    trackCustomEvent({
+                      category: "LinkedIn Profile",
+                      action: "Click",
+                      label: "LinkedIn Profile",
+                    });
+                  }}
                 />
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="social_icon"
-                  onClick={() =>
-                    window.open("https://www.instagram.com/abdel_goose/")
-                  }
+                  onClick={() => {
+                    window.open("https://www.instagram.com/abdel_goose/");
+                    trackCustomEvent({
+                      category: "Instagram Profile",
+                      action: "Click",
+                      label: "LinkedIn Profile",
+                    });
+                  }}
                 />
               </div>
             </div>
