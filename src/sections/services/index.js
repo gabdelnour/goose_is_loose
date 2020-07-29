@@ -197,7 +197,7 @@ class Services extends React.Component {
             line_linked: {
               enable: true,
               opacity: 0.5,
-              color: "#D51A35",
+              color: "#ead136",
             },
             size: {
               value: 0.5,

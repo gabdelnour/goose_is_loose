@@ -21,7 +21,7 @@
     visibility: visible;
   }
   .closeNav {
-    color: #e6d236;
+    color: #d51a35;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -62,7 +62,7 @@
         left: 0;
         bottom: 0;
         visibility: hidden;
-        background-color: #e6d236;
+        background-color: #d51a35;
         -webkit-transition: all 0.1s ease;
         transition: all 0.3s ease;
         -webkit-transform: scaleX(0);
@@ -92,7 +92,7 @@
     cursor: pointer;
     transition: 0.1s;
     &:hover {
-      color: #e6d236;
+      color: #d51a35;
     }
   }
 }

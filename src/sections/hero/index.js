@@ -2,8 +2,9 @@ import React from "react";
 import "./styles.scss";
 import { StaticQuery, graphql } from "gatsby";
 import { Row, Col } from "react-bootstrap";
-import Glitch from "components/glitch";
 import Typewriter from "typewriter-effect";
+import Particles from "react-particles-js";
+import Glitch from "components/glitch";
 import ThemeContext from "../../context";
 class Hero extends React.Component {
   static contextType = ThemeContext;
@@ -15,6 +16,7 @@ class Hero extends React.Component {
         className="hero"
         style={{ height: this.context.height }}
       >
+        {this.particles()}
         <Row>
           <Col md={6} className="content">
             <div className="content-text">
@@ -74,6 +76,34 @@ class Hero extends React.Component {
       );
     });
   }
+
+  particles() {
+    return (
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: {
+              value: 50,
+              density: {
+                enable: false,
+                value_area: 4000,
+              },
+            },
+            line_linked: {
+              enable: true,
+              opacity: 0.5,
+              color: "#ead136",
+            },
+            size: {
+              value: 0.5,
+            },
+          },
+          retina_detect: true,
+        }}
+      />
+    );
+  }
 }
 
 export default (props) => (
@@ -100,7 +130,7 @@ export default (props) => (
           childImageSharp {
             fluid(
               maxWidth: 2000
-              duotone: { highlight: "#E6D236", shadow: "#D51A35" }
+              duotone: { highlight: "#EAD136", shadow: "#D51A35" }
             ) {
               src
             }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./styles.scss";
 import { Row, Col } from "react-bootstrap";
+import Particles from "react-particles-js";
 import AnimationContainer from "components/animation-container";
 import BaffleText from "components/baffle-text";
 import Typewriter from "typewriter-effect";
@@ -68,6 +68,7 @@ class Contact extends React.Component {
           </Col>
           <Col md={5} className="form">
             {this.form()}
+            {this.particles()}
           </Col>
           <Col md={5} className="map">
             {this.map()}
@@ -163,6 +164,34 @@ class Contact extends React.Component {
         </AnimationContainer>
       );
     }
+  }
+
+  particles() {
+    return (
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: {
+              value: 50,
+              density: {
+                enable: false,
+                value_area: 4000,
+              },
+            },
+            line_linked: {
+              enable: true,
+              opacity: 0.5,
+              color: "#ead136",
+            },
+            size: {
+              value: 0.5,
+            },
+          },
+          retina_detect: true,
+        }}
+      />
+    );
   }
 
   map() {

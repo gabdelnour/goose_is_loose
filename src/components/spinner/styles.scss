@@ -8,7 +8,7 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  background-color: #251170;
+  background-color: #d51a35;
   opacity: 0;
   visibility: visible;
   transition: 0.5s;
@@ -34,12 +34,12 @@
         animation: 2s fancy infinite alternate;
 
         &:nth-child(1) {
-          border-left-color: #e6d236;
-          border-right-color: #e6d236;
+          border-left-color: #ead136;
+          border-right-color: #ead136;
         }
         &:nth-child(2) {
-          border-top-color: #e6d236;
-          border-bottom-color: #e6d236;
+          border-top-color: #ead136;
+          border-bottom-color: #ead136;
           animation-delay: 1s;
         }
       }
@@ -47,7 +47,7 @@
       &.dot {
         width: 1rem;
         height: 1rem;
-        background: #e6d236;
+        background: #ead136;
       }
     }
   }

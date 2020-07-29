@@ -44,7 +44,7 @@
         font-family: Poppins;
         font-weight: 700;
         &.Typewriter__cursor {
-          color: #e6d236;
+          color: #d51a35;
         }
       }
       @media (max-width: 991px) {
@@ -109,6 +109,14 @@
           }
         }
       }
+    }
+  }
+  .particles {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @media (max-width: 991px) {
+      width: 100%;
     }
   }
 }
