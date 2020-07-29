@@ -26,7 +26,7 @@ class Hero extends React.Component {
           <Col md={6} className="content">
             <div className="content-text">
               <div className="line-text">
-                <h4>
+                <h4 id="goose_salute">
                   <Typewriter
                     options={{
                       strings: ["Hi there!"],

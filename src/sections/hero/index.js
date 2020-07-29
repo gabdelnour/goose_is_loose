@@ -21,7 +21,7 @@ class Hero extends React.Component {
           <Col md={6} className="content">
             <div className="content-text">
               <div className="line-text">
-                <h4>Hello, I'm</h4>
+                <h4 id="goose_salute">Hello, I'm</h4>
               </div>
               <Glitch text="Gustavo Abdelnour" />
               <Typewriter

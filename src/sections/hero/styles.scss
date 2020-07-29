@@ -4,6 +4,9 @@
   padding: 50px;
   display: flex;
   align-items: center;
+  #goose_salute {
+    color: #fff;
+  }
   @media (max-width: 1024px) {
     display: flex;
     align-items: center;
@@ -83,7 +86,7 @@
         position: absolute;
         width: 50px;
         @media (max-width: 1500px) {
-          width: 25px;
+          width: 50px;
         }
         &.move-up {
           animation: up 5s infinite alternate;
