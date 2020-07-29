@@ -1,4 +1,5 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { StaticQuery, graphql } from "gatsby";
 import "./styles.scss";
 import { Row, Col } from "react-bootstrap";
@@ -134,15 +135,18 @@ class Portfolio extends React.Component {
                       <span className="title">
                         {value.content.frontmatter.title}
                       </span>
-                      <a href={value.content.frontmatter.url} target="_blank">
+                      <OutboundLink
+                        href={value.content.frontmatter.url}
+                        target="_blank"
+                      >
                         View App
-                      </a>
-                      <a
-                        href={value.content.frontmatter.repositoryUrl}
+                      </OutboundLink>
+                      <OutboundLink
+                        href={value.content.frontmatter.url}
                         target="_blank"
                       >
                         View Code
-                      </a>
+                      </OutboundLink>
                     </div>
                   </Tilt>
                 </AnimationContainer>
