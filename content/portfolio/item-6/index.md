@@ -1,6 +1,6 @@
 ---
 id: 6
-image: './image.jpg'
-title: "UX Development for Company"
-category: "UI/UX Design"
+image: "./ComingSoon.png"
+title: "Financial Algorithmic Trading"
+category: "Python"
 ---
