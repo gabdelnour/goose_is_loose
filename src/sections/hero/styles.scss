@@ -68,8 +68,8 @@
       }
       @media (min-width: 1025px) and (max-width: 1500px) {
         .glitch {
-          font-size: 70px;
-          line-height: 70px;
+          font-size: 60px;
+          line-height: 50px;
         }
       }
       .hover-button {
@@ -82,8 +82,8 @@
         object-fit: cover;
         position: absolute;
         width: 50px;
-        @media (max-width: 991px) {
-          width: 10px;
+        @media (max-width: 1500px) {
+          width: 25px;
         }
         &.move-up {
           animation: up 5s infinite alternate;

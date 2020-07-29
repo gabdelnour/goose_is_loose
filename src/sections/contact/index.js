@@ -67,8 +67,8 @@ class Contact extends React.Component {
             </h2>
           </Col>
           <Col md={5} className="form">
-            {this.form()}
             {this.particles()}
+            {this.form()}
           </Col>
           <Col md={5} className="map">
             {this.map()}

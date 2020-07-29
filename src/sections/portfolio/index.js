@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from "gatsby";
 import "./styles.scss";
 import { Row, Col } from "react-bootstrap";
 import AnimationContainer from "components/animation-container";
-import Particles from "react-particles-js";
 import BaffleText from "components/baffle-text";
 import Tilt from "react-tilt";
 import ThemeContext from "../../context";
@@ -76,40 +75,12 @@ class Portfolio extends React.Component {
                       : "inherit",
                 }}
               >
-                {this.particles()}
                 {this.items()}
               </div>
             </div>
           </Col>
         </Row>
       </section>
-    );
-  }
-  particles() {
-    return (
-      <Particles
-        className="particles"
-        params={{
-          particles: {
-            number: {
-              value: 50,
-              density: {
-                enable: false,
-                value_area: 4000,
-              },
-            },
-            line_linked: {
-              enable: true,
-              opacity: 0.5,
-              color: "#ead136",
-            },
-            size: {
-              value: 0.5,
-            },
-          },
-          retina_detect: true,
-        }}
-      />
     );
   }
 
