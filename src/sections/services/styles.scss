@@ -50,25 +50,25 @@
               margin-bottom: 50px;
             }
             @media (max-width: 1300px) {
-              padding: 0 10px;
+              padding: 0;
             }
             .icon svg {
-              font-size: 50px;
+              font-size: 30px;
               color: #d51a35;
               &.solid {
-                font-size: 40px !important;
+                font-size: 25px !important;
               }
             }
             h4 {
               color: #fff;
               font-family: Poppins;
-              margin: 15px 0px 9px 0px;
+              margin: 5px 0px 0px 0px;
               font-size: 20px;
             }
             p {
               font-family: Poppins;
               color: #eee;
-              font-size: 13px;
+              font-size: 12px;
               font-weight: 300;
             }
             &.border-side {

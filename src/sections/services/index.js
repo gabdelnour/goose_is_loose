@@ -97,11 +97,10 @@ class Services extends React.Component {
                 />
               </h4>
               <p className="goose_service">
-                What I love most about React is the ability to create cool apps
-                with a very quick workflow. I am currently working on an app to
-                visualize pathfinding and sorting algorithms. Can't wait for you
-                to check it out! I also have an app I developed for my coding
-                bootcamp at Wyncode to display data from a Financial API.
+                What I love most about React is the ability to create apps
+                REALLY FAST and an easy workflow. I am currently working on an
+                app to visualize pathfinding and sorting algorithms. Can't wait
+                for you to check it out!
               </p>
             </AnimationContainer>
           </Col>
@@ -121,11 +120,12 @@ class Services extends React.Component {
                 />
               </h4>
               <p className="goose_service">
-                As a data analyst I have professional experience with hypothesis
-                testing, statistical analysis, and data visualization. I have
-                used numerous data tracking tools such as Tableau, Amazon's
-                Quicksight, and Excel to create beautiful data stories to
-                highlight actionable insights from experiment analysis.
+                As a data analyst I have professional experience with
+                statistical analysis, time series analysis, and data
+                visualization. I have used numerous data business intelligence
+                tools such as Tableau, Amazon's Quicksight, Google Analytics,
+                and Excel to create beautiful data stories to highlight
+                actionable insights from experiment analysis.
               </p>
             </AnimationContainer>
           </Col>
@@ -146,10 +146,10 @@ class Services extends React.Component {
               </h4>
               <p className="goose_service">
                 Data Science with Python is definitely one of my favorie skills
-                to have. I love learning about Python libraries, I'm currently
-                developing Financial trading algorithms with Quantopian. I use
-                libraries like matplotlib to visualize my analysis and explain
-                my investment philosophies.
+                to have. I love learning about Python libraries. I'm currently
+                developing Financial trading algorithms with Quantopian. I
+                backtrack test these algorithms to assess their efficacy over
+                various time periods and compare against other algorithms.
               </p>
             </AnimationContainer>
           </Col>
@@ -172,7 +172,7 @@ class Services extends React.Component {
                 During my time at Limbik I dealt with many AWS tools such as EC2
                 instances, S3 Buckets, Redshift queries, Athena, AI APIs and
                 their data, YOU NAME IT!!! I'm currently taking a course of
-                Systemst Informations to understand more about Cloud Management,
+                Systems Informations to understand more about Cloud Management,
                 ETL Protocols, and DevOps.
               </p>
             </AnimationContainer>
@@ -197,7 +197,7 @@ class Services extends React.Component {
                 expert. I do try everyday to learn more about how computers are
                 able to learn. I'm currently taking a course on Mathematical
                 Thinking in Computer Science to build a foundation of
-                mathematics and then become a true AI EXPERT!
+                mathematics and then one day become a true AI EXPERT!!!
               </p>
             </AnimationContainer>
           </Col>
@@ -217,10 +217,10 @@ class Services extends React.Component {
                 />
               </h4>
               <p className="goose_service">
-                As you read from the landing section of the site. I enjoy taking
-                photographs on my free time. I really enjoy observing my
-                surroundings while trying to find beautiful shots or interesting
-                sightings. BTW THANK YOU FOR TAKING THE TIME TO READ THIS FAR!!!
+                As you read from the landing section of the site... I'm a
+                photographer. I really enjoy observing my surroundings while
+                trying to find beautiful shots or interesting sightings. BTW
+                THANK YOU FOR TAKING THE TIME TO READ THIS FAR!!!
               </p>
             </AnimationContainer>
           </Col>
