@@ -15,7 +15,7 @@ class Layout extends React.Component {
       scrolllock: 0,
       width: 0,
     };
-    this.sections = ["home", "about", "services", "portfolio", "contact"];
+    this.sections = ["home", "about", "portfolio", "services", "contact"];
     this.section_id = 0;
     this.scrolling = false;
     this.changeSection = this.changeSection.bind(this);
