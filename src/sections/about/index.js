@@ -41,17 +41,18 @@ class Hero extends React.Component {
               <div className="separator" />
               <p>
                 I was born and raised in Caracas, Venezuela. At 14 I moved to
-                Miami Florida. Upon graduating High School I attended Santa
-                Clara University where I was a D1 rower. By Junior year, I
-                transfered to George Washington University where I graduated
+                Miami Florida. Upon graduating High School, I attended Santa
+                Clara University where I was a Division 1 rower. By Junior year,
+                I transfered to George Washington University where I graduated
                 with a double major on Economics and Political Science.
                 <br></br>
                 <br></br>
-                My passion for software development arrised from my love for
-                data analysis. Being limited by BI tools and their default
-                features. I realized I needed to master the craft of software
-                development, to enhance my ability to handle data and create
-                beautiful displays of data.
+                My passion for software development emerged from my love of data
+                analyticts. As I interacted with various BI platforms and helped
+                guide the development process of BI tools at Limbik, I became
+                curious about software development. I realized I needed to
+                master the craft of software development to enhance my ability
+                to handle data beyond the boundaries of data analytics.
               </p>
               <div className="social social_icons">
                 <FontAwesomeIcon
