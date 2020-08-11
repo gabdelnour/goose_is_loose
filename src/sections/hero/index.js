@@ -36,7 +36,7 @@ class Hero extends React.Component {
                   loop: true,
                 }}
               />
-              <OutboundLink href="https://bit.ly/3jC0mec" target="_blank">
+              <OutboundLink href="https://bit.ly/2PIiipR" target="_blank">
                 <button className="hover-button">
                   <span>DOWNLOAD CV</span>
                 </button>
