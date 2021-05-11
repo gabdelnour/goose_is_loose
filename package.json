@@ -35,7 +35,7 @@
     "graphql-playground-html": "^1.6.25",
     "graphql-playground-middleware-hapi": "^1.6.15",
     "graphql-playground-middleware-lambda": "^1.7.19",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "origen-react-instagram-feed": "0.0.3",
     "react": "^16.13.1",
     "react-animated-css": "^1.2.1",
